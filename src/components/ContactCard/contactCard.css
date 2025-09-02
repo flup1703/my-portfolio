@@ -1,0 +1,19 @@
+.contact-info {
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: rgba(6, 6, 26, 0.33);
+  margin-bottom: 1rem;
+}
+
+.contact-info h3 {
+  color: #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  color: #a0aec0;
+}
