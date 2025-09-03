@@ -2,11 +2,11 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
   color: white;
   position: relative;
   overflow: hidden;
+  gap: clamp(1rem, -0.455rem + 7.27vw, 5rem);
 }
 
 .hero-content {
@@ -15,15 +15,15 @@
 }
 
 .hero h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 1.273rem + 3.64vw, 4rem);
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: clamp(0rem, -0.364rem + 1.82vw, 1rem);
   animation: fadeInUp 1s ease;
 }
 
 .hero p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+  margin-bottom: clamp(0.8rem, 0.364rem + 2.18vw, 2rem);
   opacity: 0.9;
   animation: fadeInUp 1s ease 0.2s both;
 }
@@ -33,16 +33,6 @@
   gap: 1rem;
   justify-content: center;
   animation: fadeInUp 1s ease 0.4s both;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
 }
 
 @keyframes blink {
@@ -60,5 +50,20 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 750px) {
+  .hero {
+    flex-direction: column; 
+    margin-top: 10rem;
+  }
+
+  .hero h1 {
+    font-weight: 600;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
   }
 }

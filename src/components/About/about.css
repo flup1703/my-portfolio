@@ -94,4 +94,8 @@
   .about-content {
     align-items: center;
   }
+  
+  .section-title {
+    font-weight: 400;
+  }
 }
