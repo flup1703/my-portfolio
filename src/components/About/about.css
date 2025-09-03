@@ -1,6 +1,6 @@
 .about-content {
   display: flex;
-  gap: 5rem;
+  gap: clamp(1rem, -0.455rem + 7.27vw, 5rem);
 }
 
 .about-text {
@@ -13,15 +13,15 @@
 }
 
 .about-text section .about-name {
-  font-size: 3rem;
+  font-size: clamp(1rem, 0.273rem + 3.64vw, 3rem);
   margin: 0;
 }
 
 .about-text section .about-profession {
   color: #b3b8be;
   margin: 0;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin-left: clamp(0.4rem, 0.182rem + 1.09vw, 1rem);
+  margin-bottom: clamp(0.4rem, 0.182rem + 1.09vw, 1rem);
 }
 
 .about-text .about-profession:hover {
@@ -31,63 +31,67 @@
 .about-text .work {
   color: #e2e8f0;
   margin: 0;
-  margin-left: 1rem;
-  font-size: 2rem;
+  margin-left: clamp(0.4rem, 0.182rem + 1.09vw, 1rem);
+  font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
 }
 
 .about-text .work-website {
   color: #b3b8be;
   margin: 0;
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
+  margin-left: clamp(0.5rem, 0.136rem + 1.82vw, 1.5rem);
+  margin-bottom: clamp(0.4rem, 0.182rem + 1.09vw, 1rem);
 }
 
-.about-text .work-website:hover {
-  color: #e2e8f0;
-}
-
-.about-text .stack:hover {
+.about-text .work-website:hover, .stack:hover {
   color: #e2e8f0;
 }
 
 .about-text h3 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: clamp(1rem, 0.636rem + 1.82vw, 2rem);
+  margin-bottom: clamp(0rem, -0.545rem + 2.73vw, 1.5rem);
   color: #e2e8f0;
 }
 
 .about-text h2 {
-  font-size: 1.5rem;
-  margin: 1rem 0;
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+  margin: clamp(0rem, -0.364rem + 1.82vw, 1rem) 0;
   color: #e2e8f0;
 }
 
 .about-text p {
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 0.827rem + 0.36vw, 1.1rem);
   line-height: 1.6;
-  margin-bottom: 1.5rem;
-  margin-left: 1.5rem;
+  margin-bottom: clamp(0.5rem, 0.136rem + 1.82vw, 1.5rem);
+  margin-left: clamp(0.5rem, 0.136rem + 1.82vw, 1.5rem);
   color: #a0aec0;
 }
 
 .about-image {
   text-align: center;
-  padding: 40px;
-  width: 550px;
+  padding: clamp(0rem, -1.136rem + 5.68vw, 3.125rem);
+  width: clamp(12.5rem, 7.955rem + 22.73vw, 25rem)
+}
+
+.about-image-logo {
+  border-radius: 50%;
+  width: 100%;
 }
 
 .profile-image {
   background: rgba(6, 6, 26, 1);
-  width: 300px;
-  height: 300px;
   border-radius: 50%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 4rem;
+  /* color: white; */
   box-shadow: 0 15px 40px rgba(87, 199, 133, 0.3);
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
+}
+
+@media (max-width: 750px) {
+  .about-content {
+    align-items: center;
+  }
 }

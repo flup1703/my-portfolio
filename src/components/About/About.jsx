@@ -1,4 +1,4 @@
-import "./about.css";
+import "./About.css";
 
 export default function About() {
   return (
@@ -69,7 +69,7 @@ export default function About() {
               {/* <i className="fas fa-user">
               </i> */}
               <img
-                className="logo-image"
+                className="about-image-logo"
                 src="https://github.com/flup1703.png"
                 alt="user image"
               />
