@@ -32,11 +32,15 @@ nav {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: clamp(0.5rem, -0.045rem + 2.73vw, 2rem);
   list-style: none;
 }
 
 .nav-links a {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
   text-decoration: none;
   color: #e2e8f0;
   font-weight: 500;
@@ -45,4 +49,66 @@ nav {
 
 .nav-links a:hover {
   color: rgba(87, 199, 133, 1);
+}
+
+.sidebar {
+  display: none;
+  font-size: 1.5rem;
+  color: #e2e8f0;
+  position: fixed;
+  width: 100vw;
+  justify-content: flex-end;
+}
+
+.sidebar-links {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  width: 280px;
+  height: 330px;
+  flex-direction: column;
+  gap: 2rem;
+  background: rgba(0, 0, 0, 0.245);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.sidebar-links li {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.sidebar-links li a {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5rem
+}
+
+.open {
+  display: flex;
+}
+
+.close {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .nav-container {
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-links {
+    display: none;
+  }
+
+  .sidebar {
+    display: flex;
+    padding-right: 2rem;
+  }
 }
