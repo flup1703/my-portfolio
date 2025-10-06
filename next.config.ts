@@ -1,19 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  trailingSlash: true,
   images: {
-       // For Next.js 13+ (app directory) or if using remotePatterns, you can use this instead:
-       // remotePatterns: [
-       //   {
-       //     protocol: 'https',
-       //     hostname: 'avatars.githubusercontent.com',
-       //     port: '',
-       //     pathname: '/**',
-       //   },
-       // ],
-       // Simpler option for most cases (works in Next.js 12+):
-      domains: ['avatars.githubusercontent.com'],
+    unoptimized: true,
+    domains: ["avatars.githubusercontent.com"],
   },
 };
 
