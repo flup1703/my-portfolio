@@ -7,7 +7,7 @@ interface WeatherState {
   loading: boolean;
   error: string | null;
   city: string;
-  favoriteCities: (string | null)[] | [];
+  favoriteCities: string[];
   data: Data | null;
   forecastData: ForecastData | null;
   updateCity: (value: string) => void;
@@ -24,7 +24,6 @@ interface WeatherState {
 export const useWeatherStore = create<WeatherState>()(
   persist(
     (set, get) => ({
-      flag: false,
       loading: false,
       error: null,
       city: "",
