@@ -12,7 +12,7 @@ import { useTodoStore } from "@/stores/todoStore";
 import { useEffect } from "react";
 
 export default function TodoPage() {
-    const { task, tasks, updateTask, addTask, deleteTask, clearTasksList, isDone } = useTodoStore();
+    const { tasks, updateTask, addTask, deleteTask, isDone } = useTodoStore();
     
     const clickHandler = (e: any) => {
         e.preventDefault();

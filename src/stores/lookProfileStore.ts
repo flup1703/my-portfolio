@@ -14,7 +14,7 @@ interface LookProfileState {
 
 const useLookProfileStore = create<LookProfileState>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       user: "",
       loading: false,
       error: null,
