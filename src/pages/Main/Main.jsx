@@ -1,4 +1,3 @@
-import "./Main.css";
 import Navigation from "../../components/Navigation/Navigation";
 import Hero from "../../components/Hero/Hero";
 import About from "../../components/About/About";
