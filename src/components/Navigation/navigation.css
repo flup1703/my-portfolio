@@ -60,6 +60,14 @@ nav, .sidebar-links {
   position: fixed;
   width: 100vw;
   justify-content: flex-end;
+  gap: 1rem;
+}
+
+.sidebar i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
 }
 
 .sidebar-links {

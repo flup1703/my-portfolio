@@ -1,4 +1,4 @@
-.project-card {
+/* .project-card {
   border-radius: 20px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -9,7 +9,7 @@
   backdrop-filter: blur(11.2px);
   -webkit-backdrop-filter: blur(11.2px);
   border: 1px solid rgba(6, 6, 26, 0.3);
-}
+} */
 
 .project-card:hover {
   transform: translateY(-5px);
@@ -19,7 +19,7 @@
 .project-image {
   width: 100%;
   /* height: 250px; */
-  height: clamp(9.375rem, 7.102rem + 11.36vw, 15.625rem);
+  /* height: clamp(9.375rem, 7.102rem + 11.36vw, 15.625rem); */
   display: flex;
   align-items: center;
   justify-content: center;
