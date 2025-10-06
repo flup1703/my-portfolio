@@ -24,7 +24,6 @@ interface WeatherState {
 export const useWeatherStore = create<WeatherState>()(
   persist(
     (set, get) => ({
-      flag: false,
       loading: false,
       error: null,
       city: "",
