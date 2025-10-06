@@ -48,7 +48,7 @@ export default function WeatherPage() {
             <div className="p-10 h-full bg-(--weather-card) rounded-2xl box-border max-[480px]:p-4 max-[480px]:min-h-dvh max-[323px]:p-3">
                 <div className="flex flex-col rounded-2xl border border-solid border-(--weather-border) max-[480px]:min-h-dvh">
                     <form className="flex border-(--weather-border) border-b p-2.5 pl-4 pr-4 items-center gap-2 justify-around">
-                        <Input placeholder="Город" className="text-(--weather-foreground) border-(--weather-border)" type="text" autoComplete="off" onChange={(e) => updateCity(e.target.value)}/>
+                        <Input placeholder="Город" className="text-(--weather-foreground) border-(--weather-border)" type="text" autoComplete="off" onChange={(e) => updateCity(e.target.value.trim())}/>
                         <Button className="w-fit bg-(--weather-button-background) border-(--weather-button-border) max-[323px]:w-1 hover:bg-input/50" type="submit" variant="outline" onClick={(e: any) => clickHandler(e)}>
                             <SearchIcon />
                         </Button>
@@ -67,9 +67,9 @@ export default function WeatherPage() {
                             </div>
                             <div className="flex items-center justify-center">
                                 {process.env.NODE_ENV === 'production' ? (
-                                    <Image src={`${data ? data?.weather?.[0]?.icon : '03d'}.svg`} priority={false} width={100} height={100} alt="weather-icon" />
+                                    <Image src={`${data ? data?.weather?.[0]?.icon : '03d'}.svg`} priority={false} width={300} height={300} alt="weather-icon" />
                                 ) : (
-                                    <Image src={`/${data ? data?.weather?.[0]?.icon : '03d'}.svg`} priority={false} width={100} height={100} alt="weather-icon" />
+                                    <Image src={`/${data ? data?.weather?.[0]?.icon : '03d'}.svg`} priority={false} width={300} height={300} alt="weather-icon" />
                                 )}
                             </div>
                             <div className="border border-(--weather-border) rounded-2xl m-5 mt-0 gap-1 p-2.5 bg-(--weather-card-background) max-[480px]:text-sm">
