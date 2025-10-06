@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
     domains: ["avatars.githubusercontent.com"],
   },
+  basePath: '',
 };
 
 export default nextConfig;
