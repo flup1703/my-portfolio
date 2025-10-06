@@ -66,7 +66,7 @@ export default function WeatherPage() {
                                 </div>
                             </div>
                             <div className="flex items-center justify-center">
-                                <Image src={`/my-portfolio/Weather/${data ? data?.weather?.[0].icon : '03d'}.svg`} alt="weather-icon" width={300} height={300} priority={false} />
+                                <Image src={`/${data ? data?.weather?.[0].icon : '03d'}.svg`} alt="weather-icon" width={300} height={300} priority={false} />
                             </div>
                             <div className="border border-(--weather-border) rounded-2xl m-5 mt-0 gap-1 p-2.5 bg-(--weather-card-background) max-[480px]:text-sm">
                                 <p>{data ? data.weather?.[0].description : 'Загрузка...'}</p>
@@ -87,7 +87,7 @@ export default function WeatherPage() {
                                                     <p className="forecast-temperature">Температура: {getFirstPart(String(data?.main?.temp))}°</p>
                                                     <p className="forecast-feels_like">Ощущается как: {getFirstPart(String(data?.main?.feels_like))}°</p>
                                                 </div>
-                                                <Image src={`/my-portfolio/Weather/${data ? data?.weather?.[0]?.icon : '03d'}.svg`} priority={false} width={100} height={100} alt="weather-icon" />
+                                                <Image src={`/${data ? data?.weather?.[0]?.icon : '03d'}.svg`} priority={false} width={100} height={100} alt="weather-icon" />
                                             </li>
                                         );
                                     }))}
