@@ -7,7 +7,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
     domains: ["avatars.githubusercontent.com"],
   },
-  basePath: '',
+  basePath: '/my-portfolio',
+  assetPrefix: '/my-portfolio/',
 };
 
 export default nextConfig;
