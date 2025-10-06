@@ -67,9 +67,9 @@ export default function WeatherPage() {
                             </div>
                             <div className="flex items-center justify-center">
                                 {process.env.NODE_ENV === 'production' ? (
-                                    <Image src={`${data ? data?.weather?.[0]?.icon : '03d'}.svg`} priority={false} width={100} height={100} alt="weather-icon" />
+                                    <Image src={`${data ? data?.weather?.[0]?.icon : '03d'}.svg`} priority={false} width={300} height={300} alt="weather-icon" />
                                 ) : (
-                                    <Image src={`/${data ? data?.weather?.[0]?.icon : '03d'}.svg`} priority={false} width={100} height={100} alt="weather-icon" />
+                                    <Image src={`/${data ? data?.weather?.[0]?.icon : '03d'}.svg`} priority={false} width={300} height={300} alt="weather-icon" />
                                 )}
                             </div>
                             <div className="border border-(--weather-border) rounded-2xl m-5 mt-0 gap-1 p-2.5 bg-(--weather-card-background) max-[480px]:text-sm">
