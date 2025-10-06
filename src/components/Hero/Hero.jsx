@@ -10,8 +10,8 @@ export default function Hero() {
           <p>Создаю современные, интуитивные и отзывчивые веб-приложения</p>
         </div>
         <div className="hero-buttons">
-          <Button href="projects" text="Мои работы" type="btn-primary" />
-          <Button href="contact" text="Связаться" type="btn-outline" />
+          <Button href="#projects" text="Мои работы" type="btn-primary" />
+          <Button href="#contact" text="Связаться" type="btn-outline" />
         </div>
       </div>
       <div className="container hero-image">

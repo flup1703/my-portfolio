@@ -6,7 +6,7 @@ export default function Contacts() {
     <section id="contact" className="contact-section">
       <div className="container">
         <h2 className="section-title">Свяжитесь со мной</h2>
-        <div className="contact-grid">
+        <div className="bg-(--weather-card-background) rounded-2xl border border-(--border) grid grid-cols-3 p-3">
           <ContactCard
             title="Телефон"
             text="+7 (951) 658-02-26"

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ModeToggle } from "../ModeToggle/ModeToggle";
 import "./navigation.css";
 
 export default function Navigation({ header, logo, link, items }) {
@@ -29,8 +30,10 @@ export default function Navigation({ header, logo, link, items }) {
               </li>
             );
           })}
+        <ModeToggle />
         </ul>
         <div className="sidebar">
+        <ModeToggle />
           <i className="fa fa-bars" onClick={() => setIsOpen(!isOpen)}>
             <ul className={`sidebar-links ${isOpen ? "open" : "close"}`}>
               {items.map((item, index) => {

@@ -1,12 +1,14 @@
 nav {
+  width: 100%;
+  top: 0;
+}
+
+nav, .sidebar-links {
   background: rgba(0, 0, 0, 0.245);
-  backdrop-filter: blur(10px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(9.6px);
   -webkit-backdrop-filter: blur(9.6px);
   position: fixed;
-  width: 100%;
-  top: 0;
   z-index: 1000;
 }
 
@@ -58,32 +60,38 @@ nav {
   position: fixed;
   width: 100vw;
   justify-content: flex-end;
+  gap: 1rem;
+}
+
+.sidebar i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
 }
 
 .sidebar-links {
   display: flex;
   justify-content: center;
-  position: fixed;
   top: 100px;
   right: 20px;
   width: 280px;
   height: 330px;
   flex-direction: column;
   gap: 2rem;
-  background: rgba(0, 0, 0, 0.245);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
 }
 
 .sidebar-links li {
-  display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.sidebar-links li a {
+.sidebar-links li, .sidebar-links a {
   display: flex;
+}
+
+.sidebar-links a {
   flex-direction: row-reverse;
   gap: 0.5rem
 }
