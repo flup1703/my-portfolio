@@ -7,7 +7,7 @@ interface WeatherState {
   loading: boolean;
   error: string | null;
   city: string;
-  favoriteCities: (string | null)[] | [];
+  favoriteCities: string[];
   data: Data | null;
   forecastData: ForecastData | null;
   updateCity: (value: string) => void;
