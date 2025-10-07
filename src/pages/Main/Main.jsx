@@ -21,13 +21,11 @@ export default function Main() {
         header={"flup"}
         items={items}
       />
-      {/* <main> */}
-        <Hero />
-        <About />
-        <Skills />
-        <Project />
-        <Contacts />
-      {/* </main> */}
+      <Hero />
+      <About />
+      <Skills />
+      <Project />
+      <Contacts />
     </>
   );
 }

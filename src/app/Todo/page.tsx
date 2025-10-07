@@ -42,7 +42,6 @@ export default function TodoPage() {
                                     return (
                                         <li key={task.id} className="flex hover:cursor-pointer gap-1.5 p-2.5 border rounded-2xl place-content-between border-(--todo-border) max-[480px]:pl-1.5 max-[480px]:p-0 max-[480px]:hover:none transition-colors duration-300 hover:bg-(--weather-hover)">
                                             <p className="flex items-center max-[480px]:text-xs">{task.text}</p>
-                                            {/* <p className="flex items-center max-[480px]:text-xs">{task.id}</p> */}
                                             <div className="flex gap-1">
                                                 <Button className="w-fit max-[480px]:w-2 max-[480px]:rounded-xl bg-(--weather-button-background) border-(--weather-border) hover:bg-input/50" type="button" variant="outline" title="Изменить Задачу" ><SquarePenIcon className="hover:text-orange-600 transition-colors duration-150" /></Button>
                                                 <Button className="w-fit max-[480px]:w-2 max-[480px]:rounded-xl bg-(--weather-button-background) border-(--weather-border) hover:bg-input/50" type="button" variant="outline" title="Готово" onClick={() => isDone(task.id)}><CheckIcon className="hover:text-green-600 transition-colors duration-150" /></Button>
