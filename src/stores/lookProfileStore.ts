@@ -28,7 +28,6 @@ const useLookProfileStore = create<LookProfileState>()(
 
         try {
           const response = await octokit.request(url, {
-            // username: `${user}`,
             username: "USERNAME",
             headers: {
               "X-GitHub-Api-Version": "2022-11-28",
@@ -48,7 +47,7 @@ const useLookProfileStore = create<LookProfileState>()(
 
       partialize: (state) => ({
         user: state.user,
-        // userData: state.userData,
+        userData: state.userData,
       }),
 
       storage: createJSONStorage(() => localStorage),
