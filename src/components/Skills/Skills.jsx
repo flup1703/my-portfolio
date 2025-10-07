@@ -1,6 +1,5 @@
 import "./skills.css";
 import SkillCard from "../SkillCard/SkillCard";
-import '../../icons/Git.svg';
 
 export default function Skills() {
   return (
