@@ -67,7 +67,7 @@ nav, .sidebar-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: xx-large;
+  font-size: large;
 }
 
 .sidebar-links {
@@ -75,10 +75,9 @@ nav, .sidebar-links {
   justify-content: center;
   top: 100px;
   right: 20px;
-  width: 280px;
-  height: 330px;
+  padding: 20px;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   border-radius: 20px;
 }
 
