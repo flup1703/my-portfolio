@@ -66,8 +66,6 @@ export default function About() {
           </div>
           <div className="about-image">
             <div className="profile-image">
-              {/* <i className="fas fa-user">
-              </i> */}
               <img
                 className="about-image-logo"
                 src="https://github.com/flup1703.png"
