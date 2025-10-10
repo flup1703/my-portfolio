@@ -44,7 +44,7 @@ export default function WeatherPage() {
     }, [data]);
 
     return (
-        <div className="w-full h-full justify-center p-15 max-[480px]:p-1.5 max-[323px]:p-0 min-[768px]:p-5 max-[1024px]:p-5" suppressHydrationWarning>
+        <div className="w-full h-full justify-center p-15 max-[480px]:p-1.5 max-[323px]:p-0 min-[768px]:p-5 max-[1024px]:p-5 bg-(--main-background)" suppressHydrationWarning>
             <div className="p-10 h-full bg-(--weather-card) rounded-2xl box-border max-[480px]:p-4 max-[480px]:min-h-dvh max-[323px]:p-3">
                 <div className="flex flex-col rounded-2xl border border-solid border-(--weather-border) max-[480px]:min-h-dvh">
                     <form className="flex border-(--weather-border) border-b p-2.5 pl-4 pr-4 items-center gap-2 justify-around">

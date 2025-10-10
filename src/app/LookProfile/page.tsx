@@ -25,7 +25,7 @@ export default function LookProfilePage() {
     }, [user]);
 
     return (
-        <div className="w-full min-h-[100vh] h-full justify-center p-15 max-[480px]:p-1.5 max-[323px]:p-0 min-[768px]:p-5 max-[1024px]:p-5">
+        <div className="w-full min-h-[100vh] h-full justify-center p-15 max-[480px]:p-1.5 max-[323px]:p-0 min-[768px]:p-5 max-[1024px]:p-5 bg-(--main-background)">
             <div className="p-10 h-full min-h-[100vh] bg-(--weather-card) rounded-2xl box-border max-[480px]:p-0 max-[480px]:min-h-dvh max-[323px]:p-3" suppressHydrationWarning>
                 <h1 className="p-5 scroll-m-20 text-4xl font-extrabold tracking-tight text-balance">Look Profile</h1>
                 <form className="flex border-(--weather-border) p-2.5 pl-4 pr-4 items-center gap-2 justify-around">
