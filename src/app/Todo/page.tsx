@@ -24,7 +24,7 @@ export default function TodoPage() {
         console.log(localStorage.getItem('todo-storage'));
     }, []);
     return (
-        <div className="w-full flex h-full justify-center p-15 max-[480px]:p-1.5 max-[323px]:p-0 min-[768px]:p-5 max-[1024px]:p-5" suppressHydrationWarning>
+        <div className="w-full flex h-full justify-center p-15 max-[480px]:p-1.5 max-[323px]:p-0 min-[768px]:p-5 max-[1024px]:p-5 bg-(--main-background)" suppressHydrationWarning>
             <div className="bg-(--todo-card-background) w-full h-full rounded-2xl min-h-[100vh]">
                 <h1 className="p-5 scroll-m-20 text-4xl font-extrabold tracking-tight text-balance">Todo</h1>
                 <form className="flex p-2.5 pl-4 pr-4 items-center gap-2 justify-around">
