@@ -1,8 +1,9 @@
 import Button from "../Button/Button";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section id="home" className="flex h-[100vh] w-[100vw] text-center items-center justify-center max-[450px]:justify-center max-[770px]:flex-col max-[450px]:w-fit">
+    <section id="home" className="flex h-[100vh] w-[100vw] text-center items-center justify-center max-[450px]:justify-center max-[770px]:flex-col max-[450px]:w-fit min-[768px]:mt-20 max-[770px]:mt-0">
       <div className="flex flex-col max-w-[800px] gap-4 p-10">
         <h1 className="scroll-m-20 text-center text-7xl font-extrabold tracking-tight text-balance text-(--main-title) whitespace-nowrap animate-fadeInUp max-[450px]:text-4xl max-[1030px]:text-5xl">Frontend Developer</h1>
         <div>
@@ -14,7 +15,16 @@ export default function Hero() {
         </div>
       </div>
       <div className="container hero-image">
-        <div className="container main-image"></div>
+        <div className="container main-image">
+          <Image
+            className="w-full h-full"
+            src="/picture.svg"
+            alt="user image"
+            width={300}
+            height={300}
+            priority={true}
+          />
+        </div>
       </div>
     </section>
   );
