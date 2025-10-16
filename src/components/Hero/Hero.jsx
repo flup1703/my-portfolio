@@ -16,14 +16,11 @@ export default function Hero() {
       </div>
       <div className="container hero-image">
         <div className="container main-image">
-          <Image
-            className="w-full h-full"
-            src="/picture.svg"
-            alt="user image"
-            width={300}
-            height={300}
-            priority={true}
-          />
+          {process.env.NODE_ENV === 'production' ? (
+              <Image className="w-full h-full" src={'picture.svg'} priority={true} width={300} height={300} alt="hero image" />
+          ) : (
+              <Image className="w-full h-full" src={'/picture.svg'} priority={true} width={300} height={300} alt="hero image" />
+          )}
         </div>
       </div>
     </section>
