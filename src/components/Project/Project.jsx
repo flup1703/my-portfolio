@@ -10,9 +10,10 @@ export default function Project() {
             projectImage={"fas fa-tasks"}
             image={process.env.NODE_ENV === 'production' ? "todo.jpg" : '/todo.jpg'}
             projectName="Todo"
-            description="Обычное приложение ToDO"
+            description="Простенький приложение ToDO с LocalStorage"
             tags={["JavaScript", "TypeScript", "Tailwind", "Zustand", "LocalStorage"]}
             href={'Todo'}
+            note=''
           />
           <ProjectCard
             projectImage={"fas fa-cloud"}
@@ -21,6 +22,7 @@ export default function Project() {
             description="Простенькое приложение погоды с избранным"
             tags={["React", "JavaScript", "Tailwind", "Zustand", "LocalStorage", "API"]}
             href={'Weather'}
+            note='Иногда требуется VPN'
           />
           <ProjectCard
             projectImage={"fas fa-address-card"}
@@ -29,6 +31,7 @@ export default function Project() {
             description="Простенький сайт для просмотра профиля на GitHub"
             tags={["React", "JavaScript", "Tailwind", "LocalStorage", "API"]}
             href={'LookProfile'}
+            note=''
           />
         </div>
       </div>
