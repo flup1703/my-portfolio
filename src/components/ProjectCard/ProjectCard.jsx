@@ -1,5 +1,14 @@
 import Button from "../Button/Button";
 import Image from "next/image";
+import { Note } from "../Note/Note";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 export default function ProjectCard({
   projectImage,
@@ -8,10 +17,11 @@ export default function ProjectCard({
   description,
   tags = [],
   href,
+  note,
 }) {
   return (
-    <div className="bg-(--main-background) rounded-2xl border border-(--main-border) grid p-3">
-      <div className="">
+    <Card className="bg-(--main-background) border-(--main-border)">
+      <CardHeader>
         {image ? (
           <Image
             className="size-full rounded-2xl"
@@ -29,10 +39,10 @@ export default function ProjectCard({
             height={300}
           />
         )}
-      </div>
-      <div className="p-(--project-padding) max-[1030px]:p-3 flex flex-col gap-2">
-        <p className="text-3xl text-(--main-foreground) font-semibold pb-2.5">{projectName}</p>
-        <p className="text-(--main-muted-foreground) hover:text-(--main-foreground)">{description}</p>
+        <CardTitle className="flex justify-between">{projectName}{note ? <Note text={note} /> : null}</CardTitle>
+        <CardDescription>{description}</CardDescription>
+      </CardHeader>
+      <CardContent>
         <div className="flex flex-wrap gap-1 pt-3 pb-3 text-sm font-sans">
           {tags.map((tag, index) => (
             <span key={index} className="bg-(--main-tag-background) pl-2.5 pr-2.5 pb-1 pt-1 rounded-2xl hover:translate-y-0.5">
@@ -40,10 +50,10 @@ export default function ProjectCard({
             </span>
           ))}
         </div>
-        <div className="flex justify-center items-center">
-          <Button href={href} text="Просмотреть проект"/>
-        </div>
-      </div>
-    </div>
+      </CardContent>
+      <CardFooter>
+        <Button href={href} text="Просмотреть проект"/>
+      </CardFooter>
+    </Card>
   );
 }
