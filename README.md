@@ -26,10 +26,9 @@ Thank you for your interest in my portfolio! If you have any questions or sugges
 
 ---
 
-> This site was built using [GitHub Pages](https://flup1703.github.io/my-portfolio/).
-> <br><sup>Этот сайт был построен с использованием **GitHub Pages** </sup>
-
-## Preview
+## Preview / Предварительный просмотр
 
 ![preview](https://github.com/flup1703/my-portfolio/blob/main/picture.png)
 
+> This site was built using [GitHub Pages](https://flup1703.github.io/my-portfolio/).
+> <br><sup>Этот сайт был построен с использованием **GitHub Pages** </sup>
