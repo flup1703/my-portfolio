@@ -13,7 +13,7 @@ export default function Project() {
             description="Простенький приложение ToDO с LocalStorage"
             tags={["JavaScript", "TypeScript", "Tailwind", "Zustand", "LocalStorage"]}
             href={'Todo'}
-            note=''
+            note='В разработке'
           />
           <ProjectCard
             projectImage={"fas fa-cloud"}
