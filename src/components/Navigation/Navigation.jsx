@@ -6,7 +6,7 @@ import { ModeToggle } from "../ModeToggle/ModeToggle";
 export default function Navigation({ header, logo, link, items }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="w-[100%] top-0 fixed z-50 backdrop-blur-md bg-(--main-nav-background) p-3 shadow-xl">
+    <nav className="w-[100%] top-0 fixed z-50 backdrop-blur-md bg-(--main-nav-background) p-3 shadow-xl max-[321px]:w-[320px]">
       <div className="container flex justify-between items-center">
         <a href={link} className="flex items-center justify-center text-2xl font-bold gap-5 text-(--main-foreground)">
           <img

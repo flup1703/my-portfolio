@@ -2,10 +2,10 @@ import SkillCard from "../SkillCard/SkillCard";
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section id="skills" className="max-[321px]:w-[320px]">
       <div className="container">
         <h2 className="scroll-m-20 text-5xl text-center font-semibold tracking-tight first:mt-0 text-(--main-title) max-[450px]:text-4xl">Мои навыки</h2>
-        <div className="grid grid-cols-(--skills-grid-cols) md:grid-cols-(--md-skills-grid-cols) mt-10 gap-10">
+        <div className="grid grid-cols-(--skills-grid-cols) md:grid-cols-(--md-skills-grid-cols) mt-10 gap-10 max-[376px]:p-[25px] max-[321px]:p-[10px]">
           <SkillCard
             title="HTML5 & CSS3"
             text="Семантическая верстка, Flexbox, Grid, анимации"
