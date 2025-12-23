@@ -2,10 +2,10 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 
 export default function Project() {
   return (
-    <section id="projects">
+    <section id="projects" className="max-[321px]:w-[320px]">
       <div className="container">
         <h2 className="scroll-m-20 text-5xl text-center font-semibold tracking-tight first:mt-0 text-(--main-title) max-[450px]:text-4xl">Мои проекты</h2>
-        <div className="grid grid-cols-(--project-grid-cols) md:grid-cols-(--md-project-grid-cols) md:p-5 mt-10 gap-10">
+        <div className="grid grid-cols-(--project-grid-cols) md:grid-cols-(--md-project-grid-cols) md:p-5 mt-10 gap-10 max-[321px]:grid-cols-(--sm-project-grid-cols)">
           <ProjectCard
             projectImage={"fas fa-tasks"}
             image={process.env.NODE_ENV === 'production' ? "todo.jpg" : '/todo.jpg'}

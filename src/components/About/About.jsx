@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about">
+    <section className="max-[321px]:w-[320px]" id="about">
       <div className="container">
         <h2 className="scroll-m-20 text-5xl text-center font-semibold tracking-tight first:mt-0 text-(--main-title) max-[450px]:text-4xl">Обо мне</h2>
         <div className="flex gap-35 pt-5 max-[450px]:flex-col-reverse max-[380px]:items-center max-[450px]:gap-10 max-[770px]:flex-col-reverse max-[770px]:gap-10 max-[1030px]:gap-10">
