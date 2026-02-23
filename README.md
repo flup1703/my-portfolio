@@ -32,3 +32,9 @@ Thank you for your interest in my portfolio! If you have any questions or sugges
 
 > This site was built using [GitHub Pages](https://flup1703.github.io/my-portfolio/).
 > <br><sup>Этот сайт был построен с использованием **GitHub Pages** </sup>
+
+## FSD migration
+
+В проекте начата миграция на Feature-Sliced Design (FSD). Созданы каркасные папки и инструкции в `src/entities`, `src/features`, `src/widgets`, `src/shared`.
+
+Следующие шаги — поэтапное перемещение файлов с реэкспортами и исправлением импортов. См. `src/shared/README.md` и `src/entities/README.md` для подробной карты миграции.
