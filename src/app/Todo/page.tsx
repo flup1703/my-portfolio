@@ -10,6 +10,7 @@ import { PlusIcon } from "@/components/ui/plusIcon";
 import { SquarePenIcon } from "@/components/ui/squarePenIcon";
 import { useTodoStore } from "@/stores/todoStore";
 import { useCallback, useMemo } from "react";
+import type { Task } from "@/types/todo";
 
 export default function TodoPage() {
     const { task, tasks, updateTask, updateEditedText, addTask, deleteTask, changeTaskText, isEdited, isDone } = useTodoStore();
@@ -21,9 +22,9 @@ export default function TodoPage() {
         updateTask('');
     }, [addTask]);
 
-    const pendingTasks = useMemo(() => tasks.filter(task => task.done === false), [tasks]);
+    const pendingTasks = useMemo(() => tasks.filter((task: Task) => task.done === false), [tasks]);
 
-    const completedTasks = useMemo(() => tasks.filter(task => task.done === true), [tasks]);
+    const completedTasks = useMemo(() => tasks.filter((task: Task) => task.done === true), [tasks]);
 
     const handleEditTask = useCallback((taskId: number) => isEdited(taskId), [isEdited]);
 

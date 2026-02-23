@@ -1,4 +1,4 @@
-import { Tasks } from "@/types/todo";
+import type { Task, Tasks } from "@/types/todo";
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 
@@ -30,23 +30,23 @@ const useTodoStore = create<TodoState>()(
       },
       deleteTask: (task) => {
         const { tasks } = get();
-        set({ tasks: tasks.filter((t) => t.id !== task) });
+        set({ tasks: tasks.filter((t: Task) => t.id !== task) });
       },
       changeTaskText: (task) => {
         const { tasks, editedText, updateEditedText } = get();
         
-        set({tasks: tasks.map(t => t.id === task ? {...t, text: editedText.trim(),  isEditing: !t.isEditing } : t)});
+        set({tasks: tasks.map((t: Task) => t.id === task ? {...t, text: editedText.trim(),  isEditing: !t.isEditing } : t)});
         
         updateEditedText('');
       },
       isEdited: (task) => {
         const { tasks } = get();
         
-        set({tasks: tasks.map(t => t.id === task ? {...t, isEditing: !t.isEditing } : t)});
+        set({tasks: tasks.map((t: Task) => t.id === task ? {...t, isEditing: !t.isEditing } : t)});
       },
       isDone: (task) => {
         const { tasks } = get();
-        set({tasks: tasks.map(t => t.id === task ? {...t, done: !t.done } : t)});
+        set({tasks: tasks.map((t: Task) => t.id === task ? {...t, done: !t.done } : t)});
       },
       clearTasksList: () => localStorage.clear(),
     }),
