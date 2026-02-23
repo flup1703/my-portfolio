@@ -7,11 +7,7 @@ const nextConfig: NextConfig = {
     formats: ['image/webp'],
     domains: ["avatars.githubusercontent.com"],
   },
-  typescript: {
-    // временно отключаем строгую проверку типов при билде, чтобы сборка прошла
-    // после миграции структуры — рекомендуется вернуть в `false` и исправить ошибки
-    ignoreBuildErrors: true,
-  },
+  // typescript build errors should be fixed; do not ignore in production
 
   ...(process.env.NODE_ENV === 'production' && {
        output: 'export',
